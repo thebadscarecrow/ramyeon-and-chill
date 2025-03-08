@@ -1,0 +1,246 @@
+/* Profil */
+.insta-entete {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+.insta-pseudo {
+    font-size: var(--medium-size);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.insta-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}
+
+.insta-boutons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 35px;
+    gap: 1em;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+.insta-boutons span {
+    background: var(--neutralDark);
+    border-radius: 5px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.insta-stories {
+    display: flex;
+    gap: 2em;
+    margin-bottom: 1em;
+    font-weight: 600;
+}
+
+.insta-story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.insta-profile-img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 2px solid var(--neutralDark);
+    padding: 3px;
+    cursor: pointer;
+}
+
+.insta-story-img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border: 2px solid var(--neutralDark);
+    padding: 2px;
+    cursor: pointer;
+}
+
+.insta-onglets {
+    font-size: var(--large-size);
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 0.2em;
+}
+
+.insta-onglet-selected {
+    border-bottom: 1px solid var(--textColor);
+    padding-bottom: 5px;
+}
+
+.insta-post-img {
+    object-fit: cover;
+    height: 190px;
+    width: 100%;
+}
+
+.insta-posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4px;
+}
+
+.insta-post {
+    position: relative;
+    display: flex;
+}
+
+.insta-notes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    color: #fff;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+}
+
+.insta-post:hover .insta-notes {
+    opacity: 1;
+}
+
+/* Posts */
+
+.insta-post-entete {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.insta-post-profile-img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border: 2px solid var(--neutralDark);
+    padding: 2px;
+    cursor: pointer;
+}
+
+.insta-post-data {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.insta-post-certified {
+    color: #0095f6;
+}
+
+.insta-post-dots {
+    font-size: var(--large-size);
+}
+
+.insta-content-img {
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: .5em;
+}
+
+.insta-post-icons {
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--large-size);
+}
+
+.insta-post-notes {
+    display: flex;
+    gap: .7em;
+}
+
+/* Carousel */
+.insta-carousel {
+    width: 100%; 
+    margin-bottom: .5em;
+    border-radius: 5px;
+ }
+
+.insta-cell { 
+    width: 100%;
+    height: fit-content;
+    object-fit: contain;
+    margin-right: 10px; 
+}
+
+ol.flickity-page-dots { 
+    bottom: 20px;
+}
+
+ol.flickity-page-dots .dot {
+    background-color: #fff;
+    width: 7px;
+    height: 7px;
+    margin: 0 2px;
+}
+
+button.flickity-prev-next-button {
+    width: 25px;
+    height: 25px;
+}
+
+/* Notifications */
+
+.rc-bloc-1.insta-notifs {
+    display: grid;
+    grid-template-columns: 75px 1fr 80px;
+    align-items: center;
+    padding: 2.5%;
+}
+
+.rc-bloc-1.insta-notifs:has(.insta-notif-photo) {
+    grid-template-columns: 75px 1fr 50px;
+}
+
+.insta-notif-img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.insta-notif-suivi, .insta-notif-suivre {
+    background: var(--neutralDark);
+    border-radius: 5px;    
+    padding: 7px 16px;
+    font-weight: 700;
+    cursor: pointer;    
+    text-align: center;
+    color: var(--textColor);
+}
+
+.insta-notif-suivre {
+    background-color: #0095f6;
+    color: #fff;
+}
+
+.insta-post-date, .insta-notif-date {
+    color: #a8a8a8;
+}
+
+.insta-notif-pseudo {
+    color: var(--textColor);
+}
+
+.insta-notif-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
