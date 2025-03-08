@@ -1,0 +1,364 @@
+/* Fiches de présentation **/
+.rc-fiche {
+    border: 1px solid var(--p2);
+    border-radius: 5px;
+    font-size: 11.5px;
+    margin: 0 auto;
+    padding: 1%;
+    width: 93%;
+}
+
+.rc-fiche-footer {
+    height: 65px;
+}
+
+.rc-corps {
+    background-color: var(--p3);
+    padding: 1%;
+}
+
+.rc-entete {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 1%;
+    text-align: right;
+}
+
+.rc-entete.rc-entete-rev, .rc-entete.rc-entete-no-img.rc-entete-rev {
+    text-align:left;
+    flex-direction: row;
+}
+
+.rc-entete.rc-entete-no-img {
+    flex-direction: row-reverse;
+    height: 70px;
+}
+
+.rc-entete.rc-style-1 {
+    background-color: var(--neutral);
+    border-radius: 5px;
+    padding: 1%;
+}
+
+.rc-entete-icone {
+    display: grid;
+    grid-template-columns: 35px 35px;
+    justify-items: center;
+}
+
+.rc-entete-icone.rc-style-2  {
+    background-color: var(--neutral);
+    border-radius: 5px;
+    padding: 1%;
+}
+
+.rc-entete-icone img {
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    padding: 5%;
+}
+
+.rc-entete-titre-2 {
+    background-color: var(--neutral);
+    border-radius: 5px;
+    margin-left: 1%;
+    padding: 1%;
+    width: 85%;
+}
+
+.rc-entete-titre-2.rc-style-2 {
+    height: 70px;
+}
+
+.rc-titre-1 {
+    color: var(--p2);
+    font-family: var(--font2);
+    font-size: var(--title-size);
+    text-transform: uppercase;
+}
+
+.rc-titre-2 {
+    color: var(--p1);
+    font-family: var(--font2);
+    font-size: var(--title-size);
+    text-transform: uppercase;
+}
+
+.rc-citation {
+    font-size: 10px;
+    font-style: italic;
+    line-height: 7pt;
+    margin: 0;
+}
+
+.rc-presentation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rc-presentation-left {
+    display: flex;
+    flex-direction: column;
+    height: 290px;
+    justify-content: space-between;
+}
+
+.rc-presentation-avatar {
+    border-radius: 5px;
+    height: 250px;
+}
+
+.rc-presentation-infos {
+    background-color: var(--neutral);
+    border-radius: 5px;
+    height: 290px;
+    margin-left: 1%;
+    overflow: auto;
+    padding: 2% 4% 2% 4%;
+    width: 75%;
+}
+
+.rc-presentation-infos fpas {
+    font-weight: 700;
+}
+
+.rc-flex {
+    display: flex;
+}
+
+.rc-flex-rev {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.rc-flex-rev .rc-bloc-gauche {
+    margin: 2.5% 0 0 1%;
+}
+
+.rc-icone {
+    border-radius: 5px;
+    height: 70px;
+    object-fit: cover;
+    width: 70px;
+}
+
+.rc-icone.rc-style-2 {
+    border: 5px solid var(--neutral);
+}
+
+.rc-icone.rc-style-3 {
+    padding: 1%;
+}
+
+.rc-joueur-presentation {
+    background-color: var(--neutral);
+    height: 70px;
+    margin: 0 1% 0 0;
+    overflow: auto;
+    padding: 2% 4% 2% 4%;
+}
+
+.rc-joueur-presentation.rc-style-2 {
+    margin: 0 0 0 1%;
+}
+
+.rc-etiquettes {
+    align-content: stretch;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    line-height: normal;
+    width: 100%;
+}
+
+.rc-etiquette-1 {
+    background-color: var(--neutral);
+    border-radius: 5px;
+    color: var(--c3);
+    height: 30px;
+    line-height: 25px;
+    padding: 2px 10px;
+    text-align: center;
+}
+
+.rc-etiquette-2, .rc-etiquette-3 {
+    border-radius: 5px;
+    color: var(--neutral);
+    flex: 0 0 31%;
+    font-family: var(--font1);
+    font-size: var(--little-size);
+    padding: 2px 10px;
+    text-align: center;
+    text-transform: uppercase;    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 18px;
+    white-space: nowrap;
+    transition: all 800ms var(--ease);
+}
+
+.rc-etiquette-2 {
+    background: var(--p1);
+}
+
+.rc-etiquette-3 {
+    background: var(--p2);
+}
+
+.rc-etiquette-2:hover, .rc-etiquette-3:hover {
+    white-space: pre-wrap;
+    text-overflow: unset;
+    max-height: 100px;
+}
+
+.rc-etiquette-2:hover {
+    background: var(--p2);
+}
+
+.rc-etiquette-3:hover {
+    background: var(--p1);
+}
+
+.rc-etiquette-2 a, .rc-etiquette-3 a, .rc-etiquette-2 a:visited, .rc-etiquette-3 > a:visited {
+    color: var(--neutral) !important;
+}
+
+.rc-blocs {
+    line-height: 13pt;
+}
+
+.rc-blocs > p, .rc-blocs > article {
+    margin-bottom: 0;
+    margin-top: 1%;
+}
+
+.rc-bloc-1 {
+    background-color: var(--neutral);
+    padding: 4%;
+    margin-bottom: 0;
+}
+
+.rc-bloc-2 {
+    background-color: var(--neutralDark);
+    padding: 4%;
+    margin-bottom: 0;
+}
+
+.rc-bloc-petit {
+    overflow: auto;
+    max-height: 150px;
+}
+
+.rc-bloc-moyen {
+    overflow: auto;
+    max-height: 300px;
+}
+
+.rc-bloc-grand {
+    overflow: auto;
+    max-height: 400px;
+}
+
+.rc-bloc-gauche {
+    background-color: var(--neutral);
+    border-radius: 5px;
+    flex: 1.25;
+    height: 120px;
+    margin: 1% 1% 0 0;
+    overflow: auto;
+    padding: 2% 4% 2% 4%;
+}
+
+.rc-bloc-droite {
+    flex: 0.75;
+    margin-top: 1%;
+    height: 120px;
+}
+
+.rc-bloc-gauche.rc-bloc-mini {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    height: 100px;
+}
+
+.rc-bloc-droite:has(.rc-image-petite) {
+    height: 100px;
+}
+
+.rc-bloc-gauche-2 {
+    margin: 0 1% 0 0;
+}
+
+.rc-bloc-gauche.rc-style-2 {
+    margin: 0;
+}
+
+.rc-bloc-gauche-3 {
+    background-size: cover;
+    background-position: center;
+    border: 5px solid var(--neutral);
+    border-radius: 5px;
+    height: 120px;
+    margin-right: 1%;
+    width: 25%;
+}
+
+.rc-image {
+    border-radius: 5px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.rc-image-petite {
+    height: 100px;
+}
+
+.rc-image-moyenne {
+    height: 120px;
+}
+
+img.rc-image-mid {
+    max-width: 48%;
+}
+
+.rc-image.rc-style-2 {
+    border: 5px solid var(--neutral);
+}
+
+.rc-texte-centre {
+    text-align: center;
+}
+
+.rc-margin-top {
+    margin-top: 2%;
+}
+
+.rc-avatar {
+    border-radius: 5px;
+    height:120px;
+}
+
+.rc-avatar.rc-style-2 {
+    border: 5px solid var(--neutral);
+}
+
+.puces {
+   list-style-type: '\ebad';
+   padding-inline-start: 40px;
+   margin-block: 1em;
+}
+
+.puces li::marker {
+    font-family: 'cappuccicons';
+    color: var(--c6);
+}
+
+.puces li {
+    padding-left:1em;
+}
+
