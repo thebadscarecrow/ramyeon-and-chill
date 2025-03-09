@@ -208,6 +208,10 @@ button.flickity-prev-next-button {
     grid-template-columns: 75px 1fr 50px;
 }
 
+.insta-notif-commentaire {
+    margin-right: 30px;
+}
+
 .insta-notif-img {
     border-radius: 50%;
     width: 50px;
