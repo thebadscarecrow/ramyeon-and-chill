@@ -108,6 +108,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 3px;
     transition: opacity 0.3s ease;
 }
 
