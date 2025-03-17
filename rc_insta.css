@@ -181,15 +181,18 @@
     margin-right: 10px; 
 }
 
-ol.flickity-page-dots { 
+div.flickity-page-dots, ol.flickity-page-dots { 
     bottom: 20px;
 }
 
-ol.flickity-page-dots .dot {
-    background-color: #fff;
+div.flickity-page-dots .flickity-page-dot, ol.flickity-page-dots .dot {
     width: 7px;
     height: 7px;
     margin: 0 2px;
+}
+
+div.flickity-page-dots .flickity-page-dot.is-selected {
+    background-color: #fff;
 }
 
 button.flickity-prev-next-button {
