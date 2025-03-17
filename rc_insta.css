@@ -189,6 +189,7 @@ div.flickity-page-dots .flickity-page-dot, ol.flickity-page-dots .dot {
     width: 7px;
     height: 7px;
     margin: 0 2px;
+    background: hsl(0deg 0% 100% / 25%);
 }
 
 div.flickity-page-dots .flickity-page-dot.is-selected {
