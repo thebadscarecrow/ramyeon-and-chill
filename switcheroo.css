@@ -6,9 +6,6 @@
 /* BARRE --- */
 .switcheroo {
   color: var(--textColor);
-  max-height: 83vh;
-  overflow-y: auto;
-  overflow-x: hidden;
 }
 
 /* Positionnement des ronds */
