@@ -371,13 +371,26 @@ img.rc-image-mid {
     text-align: center;
 }
 
+.rc-bloc-complet {
+    background-color: var(--p2);
+}
+
 .rc-bloc-loto {
-    padding: 2em;
+    padding: 0.5em;
     border: 5px solid var(--p3);
     border-radius: 5px;
     margin: 0.2em;
+    font-size: var(--little-size);
+    height: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: break-spaces;
+    transition: all 800ms var(--ease);
 }
 
-.rc-bloc-complet {
-    background-color: var(--p2);
+.rc-bloc-loto:hover {
+    min-height: 100px;
+    height: max-content;
+    white-space: pre-wrap;
+    text-overflow: unset;
 }
