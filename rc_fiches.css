@@ -382,16 +382,15 @@ img.rc-image-mid {
     border-radius: 5px;
     margin: 0.2em;
     font-size: var(--little-size);
-    height: 100px;
+    height: 150px;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: break-spaces;
-    transition: all 800ms var(--ease);
+    display: flex;
+    align-items: center;
 }
 
 .rc-bloc-loto:hover {
     min-height: 100px;
     height: max-content;
-    white-space: pre-wrap;
     text-overflow: unset;
 }
