@@ -388,9 +388,3 @@ img.rc-image-mid {
     display: flex;
     align-items: center;
 }
-
-.rc-bloc-loto:hover {
-    min-height: 100px;
-    height: max-content;
-    text-overflow: unset;
-}
