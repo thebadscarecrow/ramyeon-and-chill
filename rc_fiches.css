@@ -363,3 +363,21 @@ img.rc-image-mid {
     padding-left:1em;
 }
 
+/** Loto **/
+.rc-blocs-loto {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.rc-bloc-loto {
+    padding: 2em;
+    border: 5px solid var(--p3);
+    border-radius: 5px;
+    margin: 0.2em;
+}
+
+.rc-bloc-complet {
+    background-color: var(--p2);
+}
