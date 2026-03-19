@@ -323,6 +323,10 @@
     height: 120px;
 }
 
+.rc-image-grande {
+    height: 200px;
+}
+
 img.rc-image-mid {
     max-width: 48%;
 }
